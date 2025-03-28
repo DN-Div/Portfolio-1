@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="/img/website/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    
+</head>
+<body>
+     <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo">My Portfolio</h1>
+                <ul id="sidemenu">
+                    
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+               
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Divya.</span></h1>
+                
+                <h2>Electronics Engineer</h2>
+            </div>
+        </div>
+    </div>
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/img/website/about me.jpg"></div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1><br>
+                    <p>Hi! I'm Divyashree, a passionate and driven frontend developer with a background in Electronics and Communication Engineering. I love building interactive and responsive web applications using HTML, CSS, JavaScript, and React.js. My journey in tech has also led me to explore IoT and Embedded Systems, where I have worked with Arduino, ESP32, and Embedded C.</p>
+
+                    <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br><br>C, Python, JavaScript</li><br>
+                            <li><span>Frontend</span><br><br>HTML, CSS, JavaScript, Bootstrap, React.js</li><br>
+                            <li><span>Tools & Tech</span><br><br>Git, Github, VS Code</li>
+                        </ul>
+                    </div>
+                     <div class="tab-contents" id="experience"><br>
+                        <ul>
+                          <li><span>Intern| TechnoFly Solutions</span><br><br> Developed IoT-based projects using Arduino & ESP32 with C and Python.
+             Built a web interface for real-time IoT monitoring using HTML, CSS, and JavaScript.
+            Integrated sensor data visualization for enhanced user experience.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education"><br>
+                        <ul>
+        <li><span>Engineering</span><br>Electronics and Communication From PESITM(2020-2024)</li><br>
+        <li><span>Higher Secondary</span><br>PCMB from Vikasa PU College(2018-2020)</li><br>
+        <li><span>SSLC</span><br>Vikasa School(2018)</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--------------projects-->
+    <div id="Projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="Projects-list">
+                <div>
+                    
+                    <h2>AI/ML-Based Shopping Trolley with Automated Billing System </h2><br>
+                    <p>Developed a smart shopping trolley using Image Processing for product recognition.
+                         Integrated AI/ML algorithms for real-time item detection and pricing automation.
+                        Designed a responsive website using HTML, CSS, and JavaScript for user interaction.
+                         Achieved a 98% accuracy rate in product recognition.</p>
+                </div>
+                <div>
+                    
+                    <h2>Personal Portfolio Website  </h2><br>
+                    <p>Created a fully responsive personal website using HTML, CSS, and JavaScript.
+                         Showcases projects, skills, and achievements with an interactive UI.
+                         Hosted the portfolio on GitHub Pages for easy accessibility.</p>
+                </div>
+                <div>
+                    
+                    <h2>Hotel Order Management System </h2><br>
+                    <p>The Hotel Order Management System is a web-based platform for managing customer orders in hotels and restaurants. Developed using HTML, CSS, and JavaScript, it allows users to browse menus, place orders, and track their status. Hotel staff can efficiently manage orders through an admin panel. This system enhances order accuracy, reduces manual effort, and improves service speed.</p>
+                </div>
+                <div>
+                    
+                    <h2>E-commerce Website </h2><br>
+                    <p>The E-commerce Website is a responsive shopping platform that allows users to browse products, add them to a cart, and proceed to checkout. It features an interactive product listing page, a detailed product view, and a dynamic cart system. The user-friendly interface is built using HTML, CSS, and JavaScript to enhance the shopping experience. This project demonstrates strong frontend development skills, focusing on UI/UX design and responsiveness.</p>
+                </div>
+                <div>
+                    
+                    <h2> IC Tester with Web Interface</h2><br>
+                    <p>This project is designed to test the functionality of various digital ICs using a microcontroller-based system. It provides input signals, reads the output, and compares it with expected results to determine whether the IC is working correctly. The results are displayed on an LCD screen and a web interface for easy monitoring. A dedicated web page was created using HTML, CSS, and JavaScript to enhance user interaction and display test results.</p>
+                </div>
+                <div>
+                    
+                    <h2>Smart Attendance System Using RFID and Web Interface</h2><br>
+                    <p>This project automates attendance tracking using RFID (Radio Frequency Identification) technology. Each student or employee is assigned an RFID card, which they scan on an RFID reader. The system records attendance and updates a web-based dashboard in real time. The web interface, built using HTML, CSS, and JavaScript, displays attendance records and allows admin access for monitoring.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="Portfolio">
+        <div class="container">
+            <h1 class="sub-title">Achievements</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/img/website/paper.jpeg"><br>
+                    <div class="layer">
+                        <h3>International Scientific Journal of Engineering and Management.</h3>
+                        <p> This research paper, published in ISJEM , presents an AI/ML-driven approach to automate the shopping experience. It details the system's design, methodology, and experimental analysis, highlighting its effectiveness in product recognition and automated billing. The paper also discusses challenges, accuracy improvements, and future advancements in retail automation.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/img/website/paper-2.jpeg"><br>
+                    <div class="layer">
+                        <h3>Global Scientific Journal</h3>
+                        <p> This research paper, published in GSJ , presents an AI/ML-driven approach to automate the shopping experience. It details the system's design, methodology, and experimental analysis, highlighting its effectiveness in product recognition and automated billing. The paper also discusses challenges, accuracy improvements, and future advancements in retail automation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------contact-->
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1><br>
+                    <p>
+                        <i class="fa-solid fa-envelope"></i> 
+                        <a href="mailto:divyashree8642@gmail.com">divyashree8642@gmail.com</a>
+                    </p>
+                    
+                    <p>
+                        <i class="fa-solid fa-phone"></i> 
+                        <a href="tel:+918884249457">(+91) 88842 49457</a>
+                    </p>
+                    <br>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/divyashri-m" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        
+                        <a href="https://github.com/DN-Div" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        
+                    </div>
+                    <a href="/img/website/Divyashree.pdf"  download class="btn btn2">Download CV</a>
+                 </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+       
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+    <script>
+        var sidemneu = document.getElementById("sidmenu");
+        function openmenu()
+        {
+            sidemenu.style.right = "0"
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+
+ 
+
+</body>
+</html>
